@@ -16,7 +16,7 @@ function ticketExchange(ticket, isIncrease) {
 function calculateTotal() {
     const firstClassCount = getInputValue("firstclass");
     const economyClassCount = getInputValue("economyclass");
-
+    
     const totalPrice = firstClassCount * 150 + economyClassCount * 100;
     document.getElementById("total-price").innerText = "$" + totalPrice;
 
@@ -32,7 +32,7 @@ function getInputValue(ticket) {
     return ticketCount;
 }
 
-function greeting() {
+function successArea() {
     document.getElementById("buying-area").style.display = "none";
     document.getElementById("confirmation-area").style.display = "block";
 }
