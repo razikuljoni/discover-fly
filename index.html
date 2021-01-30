@@ -19,7 +19,7 @@
     <header class="container">
         <nav>
             <ul>
-                <li><a href="#buying-area">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a class="active" href="#">Sign Up</a></li>
@@ -54,8 +54,8 @@
                     <label id="first-class" for="">First Class ($150)</label>
                     <input class="inp-style inp-width" type="number" name="" id="firstclass-count" value="0">
                 </div>
-                <div class="plus-minus-btn">
-                    <p><span onclick="ticketExchange('firstclass',true)" id="">+</span> <span onclick="ticketExchange('firstclass',false)">-</span></p>
+                <div>
+                    <p><span class="btn btn-primary btn-small plus-minus-btn" onclick="ticketExchange('firstclass',true)" id="">+</span> <span class="btn btn-danger plus-minus-btn" onclick="ticketExchange('firstclass',false)">-</span></p>
                 </div>
             </div>
             
@@ -64,8 +64,8 @@
                     <label id="economy-class" for="">Economy ($100)</label>
                     <input class="inp-style inp-width" type="number" name="" id="economyclass-count" value="0">
                 </div>
-                <div class="plus-minus-btn">
-                    <p> <span onclick="ticketExchange('economyclass',true)">+</span> <span onclick="ticketExchange('economyclass',false)">-</span> </p>
+                <div class="">
+                    <p> <span class="btn btn-primary plus-minus-btn" onclick="ticketExchange('economyclass',true)">+</span> <span class="btn btn-danger plus-minus-btn" onclick="ticketExchange('economyclass',false)">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
@@ -106,9 +106,11 @@
     </main>
     <div id="confirmation-area">
         <h2 class="text-center text-success">Congratulation</h2>
-        <h1 class="text-center text-warning">Your Order is Successfully Placed</h1>
+        <h1 class="text-center text-warning text-capitalize">your order has been successfully placed</h1>
+        <h3>Total Amount $ <span id="toal">00</span></h3>
         <h3 class="text-center">HAPPY JOURNEY</h3>
         <button onclick="backToHome();" class="btn btn-primary">Back to Home</button>
+        <button class="btn btn-primary float-end">Pay Now</button>
     </div>
     <!-- JavaScript Link -->
     <script src="script.js"></script>
